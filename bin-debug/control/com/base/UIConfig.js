@@ -20,3 +20,4 @@ var UIConfig = (function () {
     return UIConfig;
 }());
 egret.registerClass(UIConfig,'UIConfig');
+//# sourceMappingURL=UIConfig.js.map

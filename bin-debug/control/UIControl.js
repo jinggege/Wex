@@ -55,3 +55,4 @@ var UIControl = (function (_super) {
     return UIControl;
 }(egret.EventDispatcher));
 egret.registerClass(UIControl,'UIControl');
+//# sourceMappingURL=UIControl.js.map

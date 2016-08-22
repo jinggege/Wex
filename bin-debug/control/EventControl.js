@@ -27,7 +27,10 @@ var EventControl = (function (_super) {
     EventControl.E_LOAD_PRE_ERROR = "E_LOAD_PRE_ERROR";
     //预加载进度
     EventControl.E_LOAD_PRE_PROGRESS = "E_LOAD_PRE_PROGRESS";
+    //地块被点中事件
+    EventControl.E_CLICK_MAPITEM = "E_CLICK_MAPITEM";
     EventControl._instnce = null;
     return EventControl;
 }(egret.EventDispatcher));
 egret.registerClass(EventControl,'EventControl');
+//# sourceMappingURL=EventControl.js.map

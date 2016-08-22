@@ -13,14 +13,16 @@ var game_file_list = [
 	"bin-debug/control/com/base/BaseUI.js",
 	"bin-debug/control/com/base/UIConfig.js",
 	"bin-debug/control/com/interfaces/IUI.js",
+	"bin-debug/control/com/Util.js",
 	"bin-debug/control/EventControl.js",
 	"bin-debug/control/ResControl.js",
 	"bin-debug/control/UIControl.js",
 	"bin-debug/Main.js",
+	"bin-debug/model/MapItemData.js",
 	"bin-debug/view/BackgroundV.js",
 	"bin-debug/view/loading/LoadingV.js",
-	"bin-debug/view/word/Block.js",
-	"bin-debug/view/word/CreatMap.js",
+	"bin-debug/view/word/CreateMap.js",
+	"bin-debug/view/word/MapItem.js",
 	"bin-debug/view/word/WordV.js",
 	//----auto game_file_list end----
 ];

@@ -24,3 +24,4 @@ var BaseUI = (function (_super) {
     return BaseUI;
 }(egret.Sprite));
 egret.registerClass(BaseUI,'BaseUI',["IUI"]);
+//# sourceMappingURL=BaseUI.js.map

@@ -30,3 +30,4 @@ var LoadingV = (function (_super) {
     return LoadingV;
 }(BaseUI));
 egret.registerClass(LoadingV,'LoadingV');
+//# sourceMappingURL=LoadingV.js.map

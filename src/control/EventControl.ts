@@ -6,6 +6,8 @@ class EventControl extends egret.EventDispatcher {
 	public static E_LOAD_PRE_ERROR:string    = "E_LOAD_PRE_ERROR";
 	//预加载进度
 	public static E_LOAD_PRE_PROGRESS:string = "E_LOAD_PRE_PROGRESS";
+	//地块被点中事件
+	public static E_CLICK_MAPITEM:string = "E_CLICK_MAPITEM";
 
 
 	private static _instnce:EventControl = null;

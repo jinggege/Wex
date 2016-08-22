@@ -26,3 +26,4 @@ var BackgroundV = (function (_super) {
     return BackgroundV;
 }(BaseUI));
 egret.registerClass(BackgroundV,'BackgroundV');
+//# sourceMappingURL=BackgroundV.js.map

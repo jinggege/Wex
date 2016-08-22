@@ -2,8 +2,7 @@ class WordV  extends BaseUI{
 
 	private layerMap:egret.Sprite = null;
 
-	private cm:CreatMap = null;
-
+	private cm:CreateMap = null;
 
 
 	public constructor() {
@@ -11,7 +10,7 @@ class WordV  extends BaseUI{
 
 		this.layerMap = new egret.Sprite();
 		this.addChild(this.layerMap);
-		this.cm = new CreatMap();
+		this.cm = new CreateMap();
 		this.layerMap.addChild(this.cm);
 
 		this.touchEnabled = true;
@@ -23,15 +22,12 @@ class WordV  extends BaseUI{
 		this.cm.create();
 	}
 
-
 	private tuchHandler(event:egret.TouchEvent){
-		var b:Block = event.target as Block;
-		if(b == null) return;
-		console.log("row=",b.row," col=",b.col);
+		var item:MapItem = event.target as MapItem;
+		if(item == null) return;
+		Util.it.log("[mapitemdata=]",item.itemData);
+
 	}
-
-
-
 
 
 

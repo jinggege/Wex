@@ -9,7 +9,6 @@ class UIControl extends egret.EventDispatcher {
 	private _stage:egret.Stage;
 
 	
-
 	public constructor() {
 		super();
 	}
@@ -36,10 +35,8 @@ class UIControl extends egret.EventDispatcher {
 	public getUI(uiKey:string):BaseUI{
 		var ui:BaseUI = this.uiCatch[uiKey];
 		return ui;
-
 	}
-
-
+	
 
 	public open(uiKey:string){
 		var ui = this.getUI(uiKey);
@@ -57,7 +54,6 @@ class UIControl extends egret.EventDispatcher {
 			ui.close();
 			this.container.removeChild(ui);
 		}
-
 	}
 
 	public isOpen():Boolean{

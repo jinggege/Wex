@@ -1,4 +1,4 @@
-class CreatMap extends egret.Sprite {
+class CreateMap extends egret.Sprite {
 
 	private mk:egret.Shape;
 
@@ -11,20 +11,17 @@ class CreatMap extends egret.Sprite {
 	}
 
 	public create(){
-		var b:Block;
+		var item:MapItem;
+		var itemData:MapItemData;
 		for(var i=0; i<10; i++){
 			for(var k=0; k<10; k++){
-				b = new Block();
-				this.addChild(b);
-
-				b.row  =i;
-				b.col = k;
-				b.bgColor = 0x000000;
-
-				var offX:number = i%2==0? 0:25;
-				b.x = k*b.width+offX;
-				b.y = i*(b.height/2);
-				b.label = "["+i+":"+k+"]";
+				item = new MapItem();
+				this.addChild(item);
+				itemData = new MapItemData();
+				itemData.row  =i;
+				itemData.col = k;
+				item.create(itemData);
+	
 			}
 		}
 

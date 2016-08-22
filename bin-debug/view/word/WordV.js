@@ -6,7 +6,7 @@ var WordV = (function (_super) {
         this.cm = null;
         this.layerMap = new egret.Sprite();
         this.addChild(this.layerMap);
-        this.cm = new CreatMap();
+        this.cm = new CreateMap();
         this.layerMap.addChild(this.cm);
         this.touchEnabled = true;
         this.cm.addEventListener(egret.TouchEvent.TOUCH_TAP, this.tuchHandler, this);
@@ -17,10 +17,10 @@ var WordV = (function (_super) {
         this.cm.create();
     };
     p.tuchHandler = function (event) {
-        var b = event.target;
-        if (b == null)
+        var item = event.target;
+        if (item == null)
             return;
-        console.log("row=", b.row, " col=", b.col);
+        Util.it.log("[mapitemdata=]", item.itemData);
     };
     p.close = function () {
         _super.prototype.close.call(this);
@@ -28,3 +28,4 @@ var WordV = (function (_super) {
     return WordV;
 }(BaseUI));
 egret.registerClass(WordV,'WordV');
+//# sourceMappingURL=WordV.js.map

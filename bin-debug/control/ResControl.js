@@ -76,3 +76,4 @@ var ResControl = (function (_super) {
     return ResControl;
 }(egret.EventDispatcher));
 egret.registerClass(ResControl,'ResControl');
+//# sourceMappingURL=ResControl.js.map
